@@ -5,9 +5,7 @@ metadata:
   labels:
     {{- include "books-catalog-chart.labels" . | nindent 4 }}
 spec:
-  {{- if not .Values.autoscaling.enabled }}
   replicas: {{ .Values.replicaCount }}
-  {{- end }}
   selector:
     matchLabels:
       {{- include "books-catalog-chart.selectorLabels" . | nindent 6 }}
@@ -38,4 +36,12 @@ spec:
           resources:
             {{- toYaml . | nindent 12 }}
           {{- end }}
-          
+          envFrom:
+          - configMapRef:
+              name: {{ include "books-catalog-chart.fullname" . }}-envs # Loading all envs from our configmap that we created
+          env:
+            - name: DATABASE_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: {{ .Values.loadSecretsFrom }} 
+                  key: password        
