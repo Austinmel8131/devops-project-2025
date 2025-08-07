@@ -28,3 +28,6 @@ class HealthViewTest(APITestCase):
         assert response.status_code == status.HTTP_200_OK
         body = response.json()
         assert body['status'] == 'ok'
+
+
+        ## just a test
