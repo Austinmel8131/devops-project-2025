@@ -1,3 +1,9 @@
+## [1.0.1](https://github.com/Austinmel8131/devops-project-2025/compare/v1.0.0...v1.0.1) (2025-08-07)
+
+### Bug Fixes
+
+* **health-view:** fixed health view to return running staus ([de9d7aa](https://github.com/Austinmel8131/devops-project-2025/commit/de9d7aa663fb8e69c21bc32f928f9f94b96481e1))
+
 ## 1.0.0 (2025-08-07)
 
 ### Features
