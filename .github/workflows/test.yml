@@ -58,9 +58,9 @@ jobs:
       contents: write
       issues: write
       pull-requests: write
-    steps: 
+    steps:
       - name: Checkout code
-      - uses: actions/checkout@4
+        uses: actions/checkout@v4
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
@@ -71,7 +71,7 @@ jobs:
         id: semantic
         uses: cycjimmy/semantic-release-action@v4
         with:
-          extra-plugins: |
+          extra_plugins: |
             @semantic-release/changelog
             @semantic-release/git
             @semantic-release/github
