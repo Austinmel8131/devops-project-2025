@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/Austinmel8131/devops-project-2025/compare/v1.0.0...v1.0.1) (2025-08-08)
+
+### Bug Fixes
+
+* **fixxing:** errors created ([f896a12](https://github.com/Austinmel8131/devops-project-2025/commit/f896a12b035d71abb75288ca6e4f2e514044445a))
+* **health-view:** fixed health view to return running staus ([de9d7aa](https://github.com/Austinmel8131/devops-project-2025/commit/de9d7aa663fb8e69c21bc32f928f9f94b96481e1))
+
 ## 1.0.0 (2025-08-07)
 
 ### Features
